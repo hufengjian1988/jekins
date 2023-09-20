@@ -11,7 +11,7 @@ pipeline {
 
         stage('matrix_merge') {
           steps {
-            git(url: 'git@codeup.aliyun.com:61bc0540b06145a70d0de4f6/erp_factory/erp_factory_matrix/erp_matrix.git', branch: 'mater', credentialsId: '11')
+            git(url: 'https://codeup.aliyun.com/61bc0540b06145a70d0de4f6/erp_factory/erp_factory_matrix/erp_matrix.git', branch: 'mater', credentialsId: 'fengjian_git', changelog: true)
           }
         }
 
